@@ -1,0 +1,130 @@
+{% extends 'website/layout.html' %}
+
+{% block title %}Your Bag | Premium Fashion{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-8 py-12 min-h-[80vh] flex flex-col lg:flex-row gap-12">
+    
+    <!-- Left Column: Cart Items -->
+    <div class="lg:w-2/3">
+        <h2 class="text-2xl font-heading font-bold text-gray-900 mb-6 border-b border-gray-200 pb-4">Your Shopping Bag</h2>
+        
+        <div class="space-y-6">
+            <!-- Mock Item 1 -->
+            <div class="flex gap-6 bg-white p-4 border border-gray-100 rounded-lg shadow-sm group hover:shadow-md transition-shadow">
+                <div class="w-32 h-40 bg-pink-50 rounded overflow-hidden flex items-center justify-center border border-pink-100">
+                    <span class="text-pink-300 font-bold text-xs tracking-widest block transform -rotate-45">IMG PLACEHOLDER</span>
+                </div>
+                <div class="flex-1 flex flex-col justify-center">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900">Elegance Focus Summer Top</h3>
+                            <p class="text-sm text-gray-500 mt-1">Size: M | Color: Blush Pink</p>
+                            <p class="text-sm font-semibold text-green-600 mt-1">In Stock</p>
+                        </div>
+                        <p class="font-bold text-lg text-gray-900">₹899</p>
+                    </div>
+                    <div class="mt-4 flex items-center gap-4">
+                        <select class="border border-gray-300 rounded px-2 py-1 text-sm text-gray-700 bg-white focus:outline-none focus:border-myntra">
+                            <option>Qty: 1</option>
+                            <option>Qty: 2</option>
+                            <option>Qty: 3</option>
+                            <option>Qty: 4</option>
+                            <option>Qty: 5</option>
+                            <option>Qty: 6</option>
+                            
+                        </select>
+                        <button class="text-gray-400 hover:text-red-500 font-semibold text-sm transition-colors">REMOVE</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mock Item 2 -->
+            <div class="flex gap-6 bg-white p-4 border border-gray-100 rounded-lg shadow-sm group hover:shadow-md transition-shadow">
+                <div class="w-32 h-40 bg-blue-50 rounded overflow-hidden flex items-center justify-center border border-blue-100">
+                    <span class="text-blue-300 font-bold text-xs tracking-widest block transform -rotate-45">IMG PLACEHOLDER</span>
+                </div>
+                <div class="flex-1 flex flex-col justify-center">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900">Premium Leather Watch</h3>
+                            <p class="text-sm text-gray-500 mt-1">Size: One Size | Color: Brown</p>
+                            <p class="text-sm font-semibold text-green-600 mt-1">In Stock</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-bold text-lg text-gray-900">₹3,499</p>
+                            <p class="text-xs text-gray-400 line-through">₹4,999</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center gap-4">
+                        <select class="border border-gray-300 rounded px-2 py-1 text-sm text-gray-700 bg-white focus:outline-none focus:border-myntra">
+                            <option>Qty: 1</option>
+                            <option>Qty: 2</option>
+                        </select>
+                        <button class="text-gray-400 hover:text-red-500 font-semibold text-sm transition-colors">REMOVE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Right Column: Verification & Checkout -->
+    <div class="lg:w-1/3">
+        <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 sticky top-24">
+            <h3 class="text-lg font-heading font-bold text-gray-900 mb-4 tracking-tight">Delivery Verification</h3>
+            
+            <form onsubmit="event.preventDefault(); alert('Verification Code Sent!');" class="space-y-4 mb-6 pb-6 border-b border-gray-200">
+                <p class="text-xs text-gray-500 mb-3 bg-blue-50 p-2 rounded border border-blue-100">For security and updates, please verify your contact details before processing your order.</p>
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Email Address</label>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="you@example.com" required
+                               class="flex-1 px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-myntra">
+                        <button type="submit" class="bg-gray-900 text-white px-3 py-2 rounded text-xs font-bold hover:bg-gray-800 transition-colors">Verify</button>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Phone Number</label>
+                    <div class="flex gap-2">
+                        <input type="tel" placeholder="+91 98765 43210" required
+                               class="flex-1 px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:ring-1 focus:ring-myntra">
+                        <button type="submit" class="bg-gray-900 text-white px-3 py-2 rounded text-xs font-bold hover:bg-gray-800 transition-colors">Verify</button>
+                    </div>
+                </div>
+            </form>
+
+            <h3 class="text-lg font-heading font-bold text-gray-900 mb-4 tracking-tight">Price Details (2 items)</h3>
+            <div class="space-y-3 text-sm text-gray-600 mb-6">
+                <div class="flex justify-between">
+                    <span>Total MRP</span>
+                    <span>₹5,898</span>
+                </div>
+                <div class="flex justify-between text-green-600">
+                    <span>Discount on MRP</span>
+                    <span>-₹1,500</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Platform Fee</span>
+                    <span>₹20</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Shipping Fee</span>
+                    <span class="text-green-600 font-bold">FREE</span>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-4 mb-6">
+                <div class="flex justify-between items-center font-bold text-lg text-gray-900">
+                    <span>Total Amount</span>
+                    <span>₹5000</span>
+                </div>
+            </div>
+            
+            <button class="w-full btn-3d" onclick="alert('Proceeding to Payment!')">
+                PLACE ORDER
+            </button>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'website/layout.html' %}
+{% load static %}
+
+{% block title %}About Us | Premium Fashion{% endblock %}
+
+{% block content %}
+<div class="bg-gray-50 py-16 min-h-[70vh]">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-gray-900 mb-6 tracking-tight">About Us</h1>
+            <p class="text-lg text-gray-600">We are passionate about bringing the latest and most premium fashion trends right to your doorstep. Experience the perfect blend of style, comfort, and affordability.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="bg-gradient-to-br from-pink-100 to-myntra h-96 md:h-full flex flex-col items-center justify-center text-white p-10 relative overflow-hidden">
+                <div class="absolute inset-0 bg-black opacity-10"></div>
+                <!-- Abstract Logo Design -->
+                <div class="w-24 h-24 bg-white/20 backdrop-blur rounded-full flex items-center justify-center font-heading font-extrabold text-5xl tracking-tighter shadow-xl z-10">PF</div>
+                <h2 class="text-2xl font-bold mt-6 z-10">Premium Fashion</h2>
+            </div>
+            
+            <div class="p-10 md:p-14">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 font-heading">Our Mission</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Started in 2024, our goal has been to revolutionize the online fashion industry. 
+                    We believe that luxury and high street style shouldn't come with exorbitant price tags. 
+                </p>
+                <h3 class="text-xl font-bold text-gray-900 mb-3 font-heading">Why Choose Us?</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center text-gray-600">
+                        <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">✓</span>
+                        100% Original Products Guaranteed
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">✓</span>
+                        Exceptional Customer Support
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center mr-3 text-sm font-bold">✓</span>
+                        Lightning Fast Delivery
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

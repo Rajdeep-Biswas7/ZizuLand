@@ -1,0 +1,60 @@
+{% extends 'website/layout.html' %}
+
+{% block title %}Login | Premium Fashion{% endblock %}
+
+{% block content %}
+<div class="min-h-[80vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-md w-full bg-white p-8 rounded-xl shadow-2xl border border-gray-100">
+        <div class="text-center mb-10">
+            <div class="w-16 h-16 bg-myntra rounded-bl-2xl rounded-tr-2xl flex items-center justify-center text-white font-bold text-3xl shadow-lg shadow-myntra/30 transform -rotate-6 mx-auto mb-6">M</div>
+            <h2 class="text-3xl font-heading font-extrabold text-gray-900 tracking-tight">Welcome Back</h2>
+            <p class="text-sm text-gray-500 mt-2">Log in to view your orders and personalized offers</p>
+        </div>
+        
+        <form class="space-y-6" action="#" method="POST">
+            {% csrf_token %}
+            <div>
+                <label for="email" class="block text-sm font-semibold text-gray-700">Email address</label>
+                <div class="mt-1">
+                    <input id="email" name="email" type="email" autocomplete="email" required 
+                           class="appearance-none block w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-myntra focus:border-myntra transition-colors sm:text-sm bg-gray-50">
+                </div>
+            </div>
+
+            <div>
+                <label for="password" class="block text-sm font-semibold text-gray-700">Password</label>
+                <div class="mt-1">
+                    <input id="password" name="password" type="password" autocomplete="current-password" required 
+                           class="appearance-none block w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-myntra focus:border-myntra transition-colors sm:text-sm bg-gray-50">
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-myntra focus:ring-myntra border-gray-300 rounded cursor-pointer">
+                    <label for="remember-me" class="ml-2 block text-sm text-gray-900 cursor-pointer">
+                        Remember me
+                    </label>
+                </div>
+
+                <div class="text-sm">
+                    <a href="#" class="font-semibold text-myntra hover:text-myntraHover transition-colors">
+                        Forgot your password?
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" class="w-full flex justify-center btn-3d pb-4 pt-4 text-base">
+                    Sign in
+                </button>
+            </div>
+        </form>
+        
+        <div class="mt-8 text-center text-sm text-gray-600">
+            Don't have an account? 
+            <a href="#" class="font-bold text-myntra hover:text-myntraHover transition-colors border-b border-myntra pb-0.5">Create an account</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

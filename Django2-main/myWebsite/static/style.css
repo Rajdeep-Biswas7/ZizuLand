@@ -1,0 +1,56 @@
+/* Professional Smooth Styling */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Professional 3D Button Effect */
+.btn-3d {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: white;
+    background: #ff3f6c; /* Myntra Primary Red/Pink */
+    border: none;
+    border-radius: 4px; /* Sleek square-ish corners like Myntra */
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 0 6px 0 #cc3256, 
+                0 10px 20px rgba(255, 63, 108, 0.4); /* 3D layer and drop shadow */
+    transform: translateY(0);
+}
+
+.btn-3d:active {
+    box-shadow: 0 2px 0 #cc3256, 
+                0 5px 10px rgba(255, 63, 108, 0.4);
+    transform: translateY(4px);
+}
+
+/* Smooth Image Hover for Products */
+.product-card {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+}
+.product-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,0.1);
+}img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 5px solid #e6b7de;
+    box-shadow: 0 0 10px #e6b7de;
+}
+
+
+    

@@ -1,0 +1,70 @@
+{% load static %}
+<!-- Kids' Section -->
+<div class="max-w-7xl mx-auto px-8 py-10">
+    <div class="flex justify-between items-end mb-8">
+        <div>
+            <h2 class="font-heading text-2xl font-bold text-gray-900 tracking-tight">Kids' Collection</h2>
+            <p class="text-gray-500 mt-1 text-sm">Cute, playful, and comfortable designs</p>
+        </div>
+        <a href="#" class="text-myntra font-semibold text-sm hover:underline">View All</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Kids Prod 1 -->
+        <div class="product-card group bg-white rounded cursor-pointer overflow-hidden border border-gray-100 relative flex flex-col">
+            <div class="h-80 bg-gray-100 relative overflow-hidden">
+                <img src="{% static 'images/kids_graphic_tshirt.png' %}" alt="Graphic T-Shirt" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <h3 class="font-bold text-gray-900 text-lg leading-tight uppercase tracking-wide">Tiny Tots</h3>
+                <p class="text-gray-500 text-sm mt-1 flex-grow">Soft 100% cotton graphic t-shirt. Breathable fabric perfect for energetic daily playtime.</p>
+                <div class="mt-3 flex items-center justify-between border-t border-gray-100 pt-3">
+                    <span class="font-bold text-gray-900 text-lg">₹499</span>
+                    <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded">BEST SELLER</span>
+                </div>
+            </div>
+        </div>
+        <!-- Kids Prod 2 -->
+        <div class="product-card group bg-white rounded cursor-pointer overflow-hidden border border-gray-100 relative flex flex-col">
+            <div class="h-80 bg-gray-100 relative overflow-hidden">
+                <img src="{% static 'images/kids_overalls.png' %}" alt="Denim Overalls" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <h3 class="font-bold text-gray-900 text-lg leading-tight uppercase tracking-wide">Little Stars</h3>
+                <p class="text-gray-500 text-sm mt-1 flex-grow">Stylist and durable denim overalls featuring cute buckle straps. Perfect for toddlers and kids.</p>
+                <div class="mt-3 flex items-center justify-between border-t border-gray-100 pt-3">
+                    <span class="font-bold text-gray-900 text-lg">₹1,299</span>
+                </div>
+            </div>
+        </div>
+        <!-- Kids Prod 3 -->
+        <div class="product-card group bg-white rounded cursor-pointer overflow-hidden border border-gray-100 relative flex flex-col">
+            <div class="h-80 bg-gray-100 relative overflow-hidden">
+                <img src="{% static 'images/kids_graphic_tshirt.png' %}" alt="Graphic Set" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" style="object-position: bottom;">
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <h3 class="font-bold text-gray-900 text-lg leading-tight uppercase tracking-wide">Playful Day</h3>
+                <p class="text-gray-500 text-sm mt-1 flex-grow">Vibrant color combination with a super comfortable fit, suitable for indoor and outdoor activities.</p>
+                <div class="mt-3 flex items-center justify-between border-t border-gray-100 pt-3">
+                    <div class="flex items-baseline gap-2">
+                        <span class="font-bold text-gray-900 text-lg">₹799</span>
+                        <span class="text-xs text-gray-400 line-through">₹1,099</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Kids Prod 4 -->
+        <div class="product-card group bg-white rounded cursor-pointer overflow-hidden border border-gray-100 relative flex flex-col">
+            <div class="h-80 bg-gray-100 relative overflow-hidden">
+                <img src="{% static 'images/kids_overalls.png' %}" alt="Casual Play Collection" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" style="object-position: top;">
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <h3 class="font-bold text-gray-900 text-lg leading-tight uppercase tracking-wide">Mini Steps</h3>
+                <p class="text-gray-500 text-sm mt-1 flex-grow">Casual play collection overalls crafted carefully to be gentle on sensitive children's skin.</p>
+                <div class="mt-3 flex items-center justify-between border-t border-gray-100 pt-3">
+                    <span class="font-bold text-gray-900 text-lg">₹1,499</span>
+                    <span class="text-xs font-bold text-myntra bg-pink-50 px-2 py-1 rounded shadow-sm">SALE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
